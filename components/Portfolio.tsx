@@ -15,32 +15,33 @@ const Portfolio: React.FC = () => {
     {
       image: "/booknpay.png",
       title: "Book n Pay",
-      description: "Description for project 1.",
+      description: "Online Travel Agent (OTA) Booking engine API Development.",
     },
     {
       image: "/hoteldomestik.png",
       title: "Hotel Domestik",
-      description: "Description for project 2.",
+      description: "Online Travel Agent (OTA) Website Development.",
     },
     {
       image: "/besthostels.png",
       title: "Best Hostels",
-      description: "Description for project 3.",
+      description: "Online Travel Agent (OTA) Website Development.",
     },
     {
       image: "/e2platform.png",
       title: "E2 Platform",
-      description: "Description for project 4.",
+      description:
+        "Educations for English test preparation website development platforms.",
     },
     {
       image: "/siarta.png",
       title: "Siartha",
-      description: "Description for project 5.",
+      description: "College website system development platform.",
     },
     {
       image: "/businesscahrteringsystem.png",
       title: "Bus Chartering System",
-      description: "Description for project 6.",
+      description: "API development for Bus Chartering System.",
     },
   ];
 
@@ -101,6 +102,7 @@ const Portfolio: React.FC = () => {
             {/* Previous Image */}
             <div className={`animate-slide-fade duration-500`}>
               <Image
+                priority={true}
                 src={portfolioItems[prevIndex].image}
                 alt={portfolioItems[prevIndex].title}
                 width={0}
@@ -123,6 +125,7 @@ const Portfolio: React.FC = () => {
               onTransitionEnd={handleAnimationEnd}
             >
               <Image
+                priority={true}
                 src={portfolioItems[currentIndex].image}
                 alt={portfolioItems[currentIndex].title}
                 width={0}

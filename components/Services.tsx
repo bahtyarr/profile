@@ -16,7 +16,7 @@ const Services: React.FC = () => {
   const services: Service[] = [
     {
       title: "Web Development",
-      description: "Building responsive and interactive websites.",
+      description: "Building responsive and interactive custom websites.",
     },
     {
       title: "Bugs Finding",

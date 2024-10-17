@@ -20,7 +20,7 @@ const CareerAndSkills: React.FC = () => {
       company: "Taksu Tech",
       period: "Jul 2024 - Present",
       description:
-        "1. Backend website development. <br/> 2. Technical Services Support.",
+        "1. Backend API Development. <br/> 2. Technical Services Support.",
       tech: [".NET Core", "MySql", "Redis", "Open API"],
     },
     {
@@ -125,9 +125,9 @@ const CareerAndSkills: React.FC = () => {
         }`}
       >
         <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-          Career Histories
+          Career Path
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-6 lg:mx-32 md:mx-24 sm:mx-8">
           {careers.map((career, index) => (
             <div
               key={index}

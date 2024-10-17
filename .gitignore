@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+app-build-manifest.json
+build-manifest.json
+package.json
+react-loadable-manifest.json
+trace
+
+.next
