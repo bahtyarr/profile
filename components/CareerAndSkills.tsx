@@ -149,7 +149,9 @@ const CareerAndSkills: React.FC = () => {
 
               {/* Job Description (Expand/Collapse) */}
               <div
-                ref={(el) => (descRefs.current[index] = el)}
+                ref={(el) => {
+                  descRefs.current[index] = el;
+                }}
                 style={{
                   height: expanded === index ? `${descHeight}px` : "0px",
                 }}

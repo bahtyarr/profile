@@ -122,7 +122,9 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              ref={(el) => (cellRefs.current[index] = el!)}
+              ref={(el) => {
+                cellRefs.current[index] = el!;
+              }}
               className="absolute bg-gray-800 text-white rounded-lg shadow-xl shadow-slate-300 p-8 transition-transform duration-500"
               style={{
                 width: "300px",

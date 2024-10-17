@@ -85,7 +85,7 @@ const Portfolio: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <section id="portfolio" className="bg-white h-screen py-16 px-8">
+    <section id="portfolio" className="bg-white py-16 px-8">
       <div
         ref={portfolioRef}
         className={`mb-12 transition-opacity duration-1000 ${
@@ -96,7 +96,7 @@ const Portfolio: React.FC = () => {
           Portfolio
         </h2>
 
-        <div className="relative">
+        <div className="relative mb-8">
           {/* Image Display */}
           <div className="flex justify-center mb-4 overflow-hidden relative">
             {/* Previous Image */}
@@ -167,10 +167,10 @@ const Portfolio: React.FC = () => {
 
           {/* Title and Description Below Image */}
           <div className="text-center mb-4">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+            <h3 className="md:text-3xl font-semibold text-gray-700 mb-2">
               {portfolioItems[currentIndex].title}
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="md:text-xl text-gray-600 mb-4">
               {portfolioItems[currentIndex].description}
             </p>
           </div>
