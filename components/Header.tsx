@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { prefix } from "@/app/prefix";
 import Typed from "typed.js";
 
 const Header: React.FC = () => {
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
       <div className=" lg:mr-8 mb-8 lg:mb-0 w-48 h-48 lg:w-1/3 bg-gray-200 lg:h-1/2 relative mb-8 lg:mb-0 lg:mr-8 mx-auto lg:mx-0 rounded-full">
         <Image
           priority={true}
-          src="/profile.png"
+          src={`${prefix}/profile.png`}
           alt="profile"
           width={0}
           height={0}

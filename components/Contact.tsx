@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import useIntersectionObserver from "./hook/useIntersectionObserver";
+import { prefix } from "@/app/prefix";
 
 const Contact: React.FC = () => {
   const [isVisibleSection, setIsVisibleSection] = useState(false);
@@ -29,7 +30,7 @@ const Contact: React.FC = () => {
             className="text-gray-800 hover:text-blue-600 transition duration-300 hover:scale-125 hover:shadow-md"
           >
             <Image
-              src="/linkedin.png"
+              src={`${prefix}/linkedin.png`}
               alt="linkedin"
               width={30}
               height={30}
@@ -43,7 +44,7 @@ const Contact: React.FC = () => {
             className="text-gray-800 hover:text-black transition duration-300 hover:scale-125 hover:shadow-md"
           >
             <Image
-              src="/github.png"
+              src={`${prefix}/github.png`}
               alt="github"
               width={30}
               height={30}
@@ -56,7 +57,7 @@ const Contact: React.FC = () => {
             className="text-gray-800 hover:text-black transition duration-300 hover:scale-125 hover:shadow-md"
           >
             <Image
-              src="/mail.png"
+              src={`${prefix}/mail.png`}
               alt="email"
               width={30}
               height={30}

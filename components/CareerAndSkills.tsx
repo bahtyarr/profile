@@ -3,6 +3,7 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import useIntersectionObserver from "./hook/useIntersectionObserver";
+import { prefix } from "@/app/prefix";
 
 interface CareerItem {
   title: string;
@@ -185,7 +186,7 @@ const CareerAndSkills: React.FC = () => {
                   }`}
                 >
                   <Image
-                    src="/down.png"
+                    src={`${prefix}/down.png`}
                     alt="arrow-down"
                     width={20}
                     height={20}

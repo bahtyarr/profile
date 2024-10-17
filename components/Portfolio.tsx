@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import useIntersectionObserver from "./hook/useIntersectionObserver";
+import { prefix } from "@/app/prefix";
 
 interface PortfolioItem {
   image: string;
@@ -13,33 +14,33 @@ interface PortfolioItem {
 const Portfolio: React.FC = () => {
   const portfolioItems: PortfolioItem[] = [
     {
-      image: "/booknpay.png",
+      image: `${prefix}/booknpay.png`,
       title: "Book n Pay",
       description: "Online Travel Agent (OTA) Booking engine API Development.",
     },
     {
-      image: "/hoteldomestik.png",
+      image: `${prefix}/hoteldomestik.png`,
       title: "Hotel Domestik",
       description: "Online Travel Agent (OTA) Website Development.",
     },
     {
-      image: "/besthostels.png",
+      image: `${prefix}/besthostels.png`,
       title: "Best Hostels",
       description: "Online Travel Agent (OTA) Website Development.",
     },
     {
-      image: "/e2platform.png",
+      image: `${prefix}/e2platform.png`,
       title: "E2 Platform",
       description:
         "Educations for English test preparation website development platforms.",
     },
     {
-      image: "/siarta.png",
+      image: `${prefix}/siarta.png`,
       title: "Siartha",
       description: "College website system development platform.",
     },
     {
-      image: "/businesscahrteringsystem.png",
+      image: `${prefix}/businesscahrteringsystem.png`,
       title: "Bus Chartering System",
       description: "API development for Bus Chartering System.",
     },
@@ -142,7 +143,7 @@ const Portfolio: React.FC = () => {
               onClick={prevSlide}
             >
               <Image
-                src="/left.png"
+                src={`${prefix}/left.png`}
                 alt="arrow-left"
                 width={20}
                 height={20}
@@ -156,7 +157,7 @@ const Portfolio: React.FC = () => {
               onClick={nextSlide}
             >
               <Image
-                src="/next.png"
+                src={`${prefix}/next.png`}
                 alt="arrow-right"
                 width={20}
                 height={20}
